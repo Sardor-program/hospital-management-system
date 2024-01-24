@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <h1 class="text-center " style="color: #42C2FF; margin-top:100px;">View Doctors</h1>
+
+<table id="example" class="table table-hover">
+  <thead>
+   <tr>
+     <th>Doctor Id</th>
+     <th>Name</th>
+     <th>Mobile</th>
+     <th>Special</th>
+     <th>Delete</th>
+   </tr>
+  </thead>
+  <tbody>
+     {% for doc in doctor %}
+       <tr>
+         <td>{{ doc.id }}</td>
+         <td>{{ doc.name }}</td>
+         <td>{{ doc.mobile }}</td>
+         <td>{{ doc.special }}</td>
+         <td><a href="{% url 'delete_doctor' doc.id %}" onclick="return confirm('Are you sure you want to delete?')" class="btn btn-outline-danger">Delete</a></td>
+       </tr>
+     {% endfor %}
+
+  </tbody>
+</table>
+<div class="container h-50">
+
+</div>
+{% endblock content %}

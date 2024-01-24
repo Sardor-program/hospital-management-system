@@ -1,0 +1,63 @@
+.mydivstyle:hover{
+        box-shadow: 0 0 20px 0 #00FFF6;
+        transform: translateY(-20px);
+        border-radius: 10px;
+    }
+
+.konti{
+    height:90px;
+}
+.konio{
+    height:200px;
+}
+.vvv{
+
+    color:#42C2FF;
+
+}
+.dsd{
+   height:1px;
+}
+.pdp{
+    height:100px;
+}
+.pdp1{
+    height:50px;
+    }
+.med-rasm{
+   width:600px;
+   height:400px;
+   z-index:2;
+   position: absolute;
+   right: 200px;
+   top: 100px;
+   box-shadow:0px 0px 30px 10px #00a5c1;
+}
+.sarlavha{
+    position: absolute;
+    z-index:2;
+    right: 120px;
+    top: 100px;
+    color:#9E9FA5;
+    text-align: right;
+}
+
+.doc-rasm{
+    height:200px;
+}
+
+.karta{
+    border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px;
+}
+
+
+.allee{
+    color:red;
+}
+
+.rounded{
+    border-top:10px solid #42C2FF;
+    border-radius:5px;
+}
+

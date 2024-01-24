@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<br> <br> <br> <br>
+<div class="container text-center" style="color:#42C2FF;">
+    <h1 class="mb-2" style="border-bottom:grey solid 1px;">Admin Dashboard</h1>
+</div>
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-sm-4 " style="border-right:grey solid 1px;">
+            <h2 style="color:red;">{{ do }}</h2>
+            <a class="text-decoration-none"  href="{% url 'view_doctor' %}" style="color:blue;"><h4>Doctors</h4></a>
+            <hr class="rounded">
+        </div>
+        <div class="col-sm-4 " style="border-right:grey solid 1px;">
+            <h2 style="color:red;">{{ pa }}</h2>
+            <a class="text-decoration-none"  href="{% url 'view_patient' %}" style="color:blue;"><h4>Patients</h4></a>
+            <hr class="rounded">
+        </div>
+         <div class="col-sm-4 " >
+            <h2 style="color:red;">{{ ap }}</h2>
+            <a class="text-decoration-none" href="{% url 'view_appointment' %}" style="color:blue;"><h4>Appointments</h4></a>
+            <hr class="rounded">
+        </div>
+    </div>
+
+</div>
+<br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br>
+
+
+
+{% endblock content %}
+
+
+
+
